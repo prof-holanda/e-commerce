@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medc Shop</title>
+    <!-- font awesome CDN import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- tailwind CSS CDN import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Jquery 4 import -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/LocalStorageManager.js"></script>
+    <script src="./js/ShoopingCartStorage.js"></script>
+    <script src="./js/components/ProductCard.js"></script>
+    <script src="./js/components/Header.js"></script>
+    <script src="./js/components/Footer.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <!-- Shopping eletrônico de equipamentos médicos e hospitalares -->
+    <!-- Header do shopping -->
+    <div id="header"></div>
+    <!-- shopping hero -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto flex items-center justify-center flex-col">
+            <h1 class="text-5xl font-bold">Medc Shop</h1>
+            <p class="text-xl mt-5">Compre os melhores equipamentos médicos e hospitalares</p>
+        </div>
+    </section>
+    <!-- products section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto flex items-center justify-center flex-col">
+            <div id="products" class="flex flex-wrap justify-center"></div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto flex items-center justify-center flex-col">
+            <h1 class="text-5xl font-bold">Sobre</h1>
+            <p class="text-xl mt-5">Compre os melhores equipamentos médicos e hospitalares</p>
+        </div>
+    </section>
+    <!-- footer section -->
+    <div id="footer"></div>
+</body>
+</html>
