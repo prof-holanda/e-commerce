@@ -76,7 +76,13 @@ function updateTotalPrice() {
 // load js
 document.addEventListener('DOMContentLoaded', function() {
     loadHeader();
-    loadProducts();
-    showCart();
     loadFooter();
+
+    if (window.location.pathname === `/cart.html`) {
+        showCart();
+    }
+
+    if (window.location.pathname === `/index.html` || window.location.pathname === `/`) {
+        loadProducts();
+    }
 });
